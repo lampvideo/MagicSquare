@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+//Номер заклинания соответствует картинке
 namespace MagicSquare
 {
     class Magic1
     {
         private int mFieldSize;
+        
+        
         public Magic1(int field_size) {
             mFieldSize = field_size;
         }
@@ -14,8 +16,11 @@ namespace MagicSquare
         {
             return x > y;
         }
-        
         public bool spell_2(int x, int y)
+        {
+            return x == y;
+        }
+        public bool spell_3(int x, int y)
         {
             return y == mFieldSize - 1 - x;
         }
@@ -60,13 +65,13 @@ namespace MagicSquare
 
         public bool spell_12(int x, int y)
         {
-            //TODO
+            //TODO Не сделал
             return true;
             //return ((x - 1) % 23 == 0 || (y - 1) % 23 == 0);
         }
         public bool spell_13(int x, int y)
         {
-            //TODO
+            //TODO Не сделал
             //return true
             return  (y > mFieldSize - 1 - x -4) && (y < mFieldSize - 1  -x +  4);
             //return ((x - 1) % 23 == 0 || (y - 1) % 23 == 0);
