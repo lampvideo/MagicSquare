@@ -6,9 +6,11 @@ namespace MagicSquare
 {
     class Magic1
     {
+        //Размер поля
         private int mFieldSize;
         
         
+       // in [field_size] размер поля
         public Magic1(int field_size) {
             mFieldSize = field_size;
         }
